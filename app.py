@@ -9,15 +9,7 @@ def home():
 
 @app.route('/app')
 def blog():
-    return "Hello, from App!"
-
-@app.route('/version')
-def blog():
-    return "This App version is 1.0.1"
-
-@app.route('/eat')
-def blog():
-    return "We are sorry, we are building the kitchen, will take your order after sometime"
+    return "Hello, from our flask App!"
 
 if __name__ == '__main__':
     app.run(threaded=True,host='0.0.0.0',port=8081)
